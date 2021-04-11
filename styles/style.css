@@ -1,0 +1,734 @@
+.design {
+    border-radius: 0px;
+    background-color: #1a2c51;
+}
+
+body {
+    background-color: #8dd6d4;
+}
+
+.footer {
+    background-color: #1a2c51;
+    text-align: center;
+    color: #5d93a7;
+    width: auto;
+    height: 45px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 1px;
+    width: 100%;
+    bottom: 0;
+    position: fixed
+}
+
+
+/* First table */
+
+.ch-grid {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.ch-grid:after, .ch-item:before {
+    content: '';
+    display: table;
+}
+
+.ch-grid:after {
+    clear: both;
+}
+
+.ch-grid li {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.ch-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 {
+    background-image: url(../images/pirin.png);
+}
+
+.ch-img-2 {
+    background-image: url(../images/rila.png);
+}
+
+.ch-img-3 {
+    background-image: url(../images/melnik.png);
+}
+
+.ch-info {
+    position: absolute;
+    background: rgba(26, 44, 81, 0.8);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+}
+
+.ch-info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 45px 0 0 0;
+    height: 140px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 0 0 1px #fff, 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.ch-info p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: all 1s ease-in-out 0.4s;
+}
+
+.ch-info p a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ch-item:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+.ch-item:hover .ch-info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+    opacity: 1;
+}
+
+
+/* Animation for Titles*/
+
+.title1 p {
+    margin-top: 25px;
+    font-size: 50px;
+    text-align: center;
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.subtitle-1 {
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+}
+
+.subtitle-2 {
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+}
+
+.subtitle-3 {
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+}
+
+.subtitle-4 {
+    font-size: 35px;
+    font-family: 'EB Garamond', serif;
+}
+
+.subtitle-5 {
+    font-size: 45px;
+    font-family: 'EB Garamond', serif;
+}
+
+.subtitle-6 {
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    color: #1a2c51
+}
+
+
+/* Second Table*/
+
+.ch-grid-1 {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.ch-grid-1 li {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.ch-item-1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    cursor: default;
+    box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.6), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1-1 {
+    background-image: url(../images/gallerypirin.png);
+}
+
+.ch-img-2-1 {
+    background-image: url(../images/gallery-rila.png);
+}
+
+.ch-img-3-1 {
+    background-image: url(../images/gallery-melnik.png);
+}
+
+.ch-info-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+    backface-visibility: hidden;
+}
+
+.ch-info-1 h4 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 65px 0 0 0;
+    height: 110px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ch-info-1 p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(141, 214, 212, 0.5);
+}
+
+.ch-info-1 p a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info-1 p a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ch-item-1:hover {
+    box-shadow: inset 0 0 0 110px rgba(26, 44, 81, 0.8), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(141, 214, 212, 0.1);
+}
+
+.ch-item-1:hover .ch-info-1 {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.gallery {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid #82afc3;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.gallery:hover {
+    -webkit-animation: spin 2s;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gallery-info-1 h4 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 0 30px;
+    padding: 65px 0 0 0;
+    height: 110px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-info-1 p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 12px;
+    border-top: 1px solid rgba(141, 214, 212, 0.5);
+}
+
+.gallery-info-1 p a {
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.gallery-info-1 p a:hover {
+    color: rgba(255, 242, 34, 0.8);
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.search {
+    display: block;
+    text-align: center;
+}
+
+#myInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+}
+
+#myInput:hover {
+    width: 100%;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2;
+    cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    background-image: url('img_parallax.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    background-color: #305b76;
+    height: 100%;
+}
+
+.about {
+    background-color: #1a2c51;
+    height: 100%;
+}
+
+.map {
+    background-color: #5d93a7;
+    height: 100%;
+}
+
+.infostyle {
+    color: white;
+}
+
+.align {
+    text-align: center;
+}
+
+.titleabout p {
+    margin-top: 70px;
+    font-size: 50px;
+    text-align: center;
+    -webkit-animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.box1 {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box2 {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box3 {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box4 {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.spacer {
+    background-color: #305b76;
+    height: 1%;
+}
+
+.goal {
+    background-color: #5d93a7;
+    height: 100%;
+}
+
+.mapcolor a {
+    color: white
+}
+
+.maptable ul {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    overflow: auto;
+}
+
+.box1-melnik {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box2-melnik {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box3-melnik {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box4-melnik {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box1-rila {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box2-rila {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box3-rila {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box4-rila {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box5-rila {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box1-pirin {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box2-pirin {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.box3-pirin {
+    background-color: white;
+    border-radius: 10px;
+    border-color: #305b76;
+    border-width: medium;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    width: 100%;
+    text-align: center;
+}
+
+.photoalign-1 {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px
+}
+
+.photoalign-2 {
+    width: 43%;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px
+}
+
+.articlegallery {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px 20px 200px 200px
+}
+
+.boxtext {
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+}
